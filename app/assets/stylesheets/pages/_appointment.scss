@@ -34,8 +34,14 @@ label {
   font-weight: 500;
   text-align: center;
   align-items: center;
-  /* justify-content: center; */
-  /* margin-left: 15px; */
-  /* left: 12px; */
+  margin-left: 0;
+  left: 0;
   padding: 10px;
+  border-radius: 8px;
+  width: 310px;
+  height: 44px;
+}
+
+#appointment_appointment_hour {
+  background-color: white;
 }
