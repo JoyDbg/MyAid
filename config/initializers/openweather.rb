@@ -15,7 +15,10 @@ module Net
   end
 end
 
-# https://stackoverflow.com/a/16983443 
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.production?
+
+
+# https://stackoverflow.com/a/16983443
 
 
 OPENWEATHER_CLIENT = OpenWeather::Client.new(
