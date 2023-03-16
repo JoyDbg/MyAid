@@ -4,7 +4,6 @@ User.destroy_all
 Treatment.destroy_all
 Doctor.destroy_all
 
-
 puts "Seeding"
 
 # Creating the Treatments
@@ -35,7 +34,7 @@ physical_exercice = Treatment.create!(name: "physical exercise", category: "exer
 
 # Creating the users
 theo = User.create!(
-  email: "tt@gmail.com" ,
+  email: "tt@gmail.com",
   password: "123456",
   first_name: "theo",
   last_name: "thiberge",
@@ -126,7 +125,7 @@ appointment7 = Appointment.create(date: Date.today, comment: "Global check-up to
 
 
 #appointments for demo day
-appointment8 = Appointment.create(date: Date.parse('17/03/2023'), comment: "Post Op checking, ask when I can do sport again ", user: diane, doctor: doctor8, appointment_hour: 6, appointment_min: 30, day_half: "PM" )
+appointment8 = Appointment.create(date: Date.today, comment: "Post Op checking, ask when I can do sport again ", user: diane, doctor: doctor8, appointment_hour: 6, appointment_min: 30, day_half: "PM" )
 appointment9 = Appointment.create(date: Date.parse('18/03/2023'), comment: "The nurse will show me how to change the bandage", user: diane, doctor: doctor9, appointment_hour: 10, appointment_min: 30, day_half: "AM" )
 
 
