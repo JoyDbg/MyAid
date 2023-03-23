@@ -69,37 +69,37 @@ maung = User.create!(
 
 # Creating the prescriptions
 
-prescription_1 = Prescription.create!(start_date: "10/03/2023", end_date: "20/03/2023", todo_hours: 11, todo_minutes: 30, day_half: "AM", comment: "2 x 500mg - Take the pills before the main meal of the day", user: theo, treatment: paracetamol, taken_date: Date.today)
+prescription_1 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 11, todo_minutes: 30, day_half: "AM", comment: "2 x 500mg - Take the pills before the main meal of the day", user: theo, treatment: paracetamol, taken_date: Date.today)
 
-prescription_2 = Prescription.create!(start_date: "07/03/2023", end_date: "17/03/2023", todo_hours: 9, todo_minutes: 00,  day_half: "PM", comment: "3 x 125mg - Take the pills before going to sleep", user: theo, treatment: tylenol, taken_date: Date.today)
+prescription_2 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 9, todo_minutes: 00,  day_half: "PM", comment: "3 x 125mg - Take the pills before going to sleep", user: theo, treatment: tylenol, taken_date: Date.today)
 
-prescription_5 = Prescription.create!(start_date: "17/03/2023", end_date: "21/03/2023", todo_hours: 1, todo_minutes: 00, day_half: "PM",  comment: "4 x 250mg - Take during the meal", user: theo, treatment: muscadol)
+prescription_5 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 1, todo_minutes: 00, day_half: "PM",  comment: "4 x 250mg - Take during the meal", user: theo, treatment: muscadol)
 
-prescription_3 = Prescription.create!(start_date: "02/03/2023", end_date: "22/03/2023", todo_hours: 10, todo_minutes: 00, day_half: "AM",  comment: "1 x 250mg - In the morning ", user: theo, treatment: amoxiciline)
+prescription_3 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 10, todo_minutes: 00, day_half: "AM",  comment: "1 x 250mg - In the morning ", user: theo, treatment: amoxiciline)
 
-prescription_6 = Prescription.create!(start_date: "04/03/2023", end_date: "19/03/2023", todo_hours: 4, todo_minutes: 00, day_half: "PM",  comment: "1 x 500mg - Take in the afternoon", user: theo, treatment: targin)
+prescription_6 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 4, todo_minutes: 00, day_half: "PM",  comment: "1 x 500mg - Take in the afternoon", user: theo, treatment: targin)
 
-prescription_4 = Prescription.create!(start_date: "03/03/2023", end_date: "18/03/2023", todo_hours: 11, todo_minutes: 00, day_half: "AM",  comment: "2 tablets - Take with a fair amount of water", user: theo, treatment: relaxon)
+prescription_4 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 11, todo_minutes: 00, day_half: "AM",  comment: "2 tablets - Take with a fair amount of water", user: theo, treatment: relaxon)
 
-prescription_7 = Prescription.create!(start_date: "03/03/2023", end_date: "18/03/2023", todo_hours: 10, todo_minutes: 00, day_half: "PM",  comment: "Apply a fair amount on the burnt area before going to bed", user: theo, treatment: cream)
+prescription_7 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 10, todo_minutes: 00, day_half: "PM",  comment: "Apply a fair amount on the burnt area before going to bed", user: theo, treatment: cream)
 
-prescription_8 = Prescription.create!(start_date: "15/03/2023", end_date: "27/03/2023", todo_hours: 7, todo_minutes: 00, day_half: "PM",  comment: "During your shower, instead of the current shower gel and shampoo", user: theo, treatment: betadine)
+prescription_8 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 7, todo_minutes: 00, day_half: "PM",  comment: "During your shower, instead of the current shower gel and shampoo", user: theo, treatment: betadine)
 
-prescription_9 = Prescription.create!(start_date: "04/03/2023", end_date: "19/03/2023", todo_hours: 2, todo_minutes: 00, day_half: "PM",  comment: "Spend around 30 min outdoors to exercise", user: theo, treatment: dynamic_walk)
+prescription_9 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 2, todo_minutes: 00, day_half: "PM",  comment: "Spend around 30 min outdoors to exercise", user: theo, treatment: dynamic_walk)
 
-prescription_10 = Prescription.create!(start_date: "14/03/2023", end_date: "19/03/2023", todo_hours: 9, todo_minutes: 00, day_half: "AM",  comment: "Save a 1h-time slot to practice meditation to relax and accept the present time", user: theo, treatment: meditation)
+prescription_10 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 9, todo_minutes: 00, day_half: "AM",  comment: "Save a 1h-time slot to practice meditation to relax and accept the present time", user: theo, treatment: meditation)
 
 
 #prescriptions for demo day
-prescription_12 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 2, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol, taken_date: Date.today)
-prescription_13 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 6, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol)
-prescription_14 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 10, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol)
-prescription_15 = Prescription.create!(start_date: "16/03/2023", end_date: "23/03/2023", todo_hours: 4, todo_minutes: 30, day_half: "PM", comment: "1 x 1000mg - Don't mix this pill with alcool", user: diane, treatment: amoxiciline)
-prescription_16 = Prescription.create!(start_date: "14/03/2023", end_date: "15/03/2023", todo_hours: 9, todo_minutes: 00, day_half: "AM", comment: "2 x 500 mg - Don't mix this pill with alcool", user: diane, treatment: codeine)
-prescription_17 = Prescription.create!(start_date: "16/03/2023", end_date: "23/03/2023", todo_hours: 9, todo_minutes: 00, day_half: "PM", comment: "Use it instead of your current shower gel", user: diane, treatment: betadine)
-prescription_18 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 10, todo_minutes: 30, day_half: "AM", comment: "Disinfect the wound and make sure it's dry before to change the bandage", user: diane, treatment: bandage, taken_date: Date.today)
-prescription_19 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 5, todo_minutes: 00, day_half: "PM", comment: "around 15 minutes to prevent phlebitis", user: diane, treatment: gentle_walk)
-prescription_20 = Prescription.create!(start_date: "16/03/2023", end_date: "30/03/2023", todo_hours: 10, todo_minutes: 00, day_half: "PM", comment: "meditate to accept and fight the pain", user: diane, treatment: meditation)
+prescription_12 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 2, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol, taken_date: Date.today)
+prescription_13 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 6, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol)
+prescription_14 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 10, todo_minutes: 30, day_half: "PM", comment: "2 x 500mg - Take the pills with a huge glass of water", user: diane, treatment: paracetamol)
+prescription_15 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 4, todo_minutes: 30, day_half: "PM", comment: "1 x 1000mg - Don't mix this pill with alcool", user: diane, treatment: amoxiciline)
+prescription_16 = Prescription.create!(start_date: "14/03/2023", end_date: Date.today + 3, todo_hours: 9, todo_minutes: 00, day_half: "AM", comment: "2 x 500 mg - Don't mix this pill with alcool", user: diane, treatment: codeine)
+prescription_17 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 9, todo_minutes: 00, day_half: "PM", comment: "Use it instead of your current shower gel", user: diane, treatment: betadine)
+prescription_18 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 10, todo_minutes: 30, day_half: "AM", comment: "Disinfect the wound and make sure it's dry before to change the bandage", user: diane, treatment: bandage, taken_date: Date.today)
+prescription_19 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 5, todo_minutes: 00, day_half: "PM", comment: "around 15 minutes to prevent phlebitis", user: diane, treatment: gentle_walk)
+prescription_20 = Prescription.create!(start_date: Date.today - 7, end_date: Date.today + 3, todo_hours: 10, todo_minutes: 00, day_half: "PM", comment: "meditate to accept and fight the pain", user: diane, treatment: meditation)
 
 # creating doctors
 doctor1 = Doctor.create!(title: "Dr.", name: "Doe", specialty: "Surgeon", address: "1 Av. Claude Vellefaux, 75010 Paris", latitude: 37.7749, longitude: -122.4194, user: theo)
@@ -117,7 +117,7 @@ doctor9 = Doctor.create!(title: "Nrs.", name: "Hawks", specialty: "Post Op Care"
 
 # Appointments
 appointment1 = Appointment.create(date: Date.parse('11/12/2023'), comment: "Meeting with the surgeon to prepare the operation of next month. Should last around 45min", user: theo, doctor: doctor1, appointment_hour: 8, appointment_min: 30, day_half: "AM" )
-appointment2 = Appointment.create(date: Date.today, comment: "The nurse will show me how to do the injections after the operation", user: theo, doctor: doctor2, appointment_hour: 10, appointment_min: 30, day_half: "AM" )
+appointment2 = Appointment.create(date: Date.tomorrow, comment: "The nurse will show me how to do the injections after the operation", user: theo, doctor: doctor2, appointment_hour: 10, appointment_min: 30, day_half: "AM" )
 appointment3 = Appointment.create(date: Date.today, comment: "Yearly meeting with the ophtalmologist in order to see how my sight has evolved. Ask for the new glasses prescription!", user: theo, doctor: doctor3, appointment_hour: 4, appointment_min: 30, day_half: "PM" )
 appointment4 = Appointment.create(date: Date.today, comment: "General checkup. He is replacing Dr Linda for the next months because she is pregnant.", user: theo, doctor: doctor4, appointment_hour: 1, appointment_min: 30, day_half: "PM" )
 appointment5 = Appointment.create(date: Date.today, comment: "Yearly check-up. I should ask her regarding the different suncreams I've seen online that seem to be more ecological. Can they be trusted?", user: theo, doctor: doctor5, appointment_hour: 3, appointment_min: 0, day_half: "PM" )
